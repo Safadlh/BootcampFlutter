@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas-9/Telegram.dart';
+import 'package:sanberappflutter/Tugas/Tugas-10/HomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.blue,
-        )
       ),
-      home: Telegram(),
+      home: HomeScreen(),
     );
   }
 }
