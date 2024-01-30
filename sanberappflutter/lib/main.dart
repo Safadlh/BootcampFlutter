@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas-10/HomeScreen.dart';
+import 'package:sanberappflutter/Tugas/Tugas-11/LoginScreen.dart';
+//import 'package:sanberappflutter/Tugas/Tugas-11/Dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomeScreen(),
+        appBarTheme: AppBarTheme(
+        color: Color(0xfff475BD8),
+        iconTheme: IconThemeData(color: Colors.white),
+      )),
+      home: LoginScreen(),
+            //Dashboard()
     );
   }
 }
