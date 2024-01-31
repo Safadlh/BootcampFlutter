@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas-11/LoginScreen.dart';
-//import 'package:sanberappflutter/Tugas/Tugas-11/Dashboard.dart';
+import 'package:sanberappflutter/Tugas/Tugas-12/get_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-        color: Color(0xfff475BD8),
-        iconTheme: IconThemeData(color: Colors.white),
-      )),
-      home: LoginScreen(),
-            //Dashboard()
+          color: Colors.blue,
+        ),
+      ),
+      home: GetDataScreen(),
     );
   }
 }
