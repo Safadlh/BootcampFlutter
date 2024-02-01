@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas-12/get_data.dart';
+import 'package:sanberappflutter/Tugas/Tugas-13/pages/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           color: Colors.blue,
         ),
       ),
-      home: GetDataScreen(),
+      home: SplashScreen(),
     );
   }
 }
