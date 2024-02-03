@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas/Tugas-14/get_data_screen.dart';
+import 'package:get/get.dart';
+import 'package:sanberappflutter/Tugas/Tugas-15/pages/page_1.dart';
+import 'package:sanberappflutter/Tugas/Tugas-15/routes/page_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
           color: Colors.blue,
         ),
       ),
-      home: GetDataScreenStateManagement(),
+      home: PageOne(),
+      getPages: pageRouteApp.pages,
     );
   }
 }
